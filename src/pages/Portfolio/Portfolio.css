@@ -1,0 +1,42 @@
+.portfolio {
+    font-family: 'Karla';
+    margin-bottom: 100px;
+}
+
+.portfolio-images-container {
+    display: grid;
+    gap: 20px;
+    height: 100%;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.portfolio-images-container >.featured-item {
+    min-height: 450px;
+}
+
+@media screen  and (max-width:900px){
+    .portfolio-images-container {
+        grid-template-columns: 1fr;
+    }  
+
+    .portfolio-images-container >.featured-item {
+        min-height: 200px;
+    }
+    
+}
+
+@media screen  and (max-width:600px){
+    .portfolio {
+        padding: 0px 20px;
+        margin-bottom: 120px;
+        margin-top: 133px;
+    }
+    .portfolio-images-container {
+        grid-template-columns: 1fr;
+    }  
+
+    .portfolio-images-container >.featured-item {
+        min-height: 250px;
+    }
+    
+}

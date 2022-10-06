@@ -1,0 +1,9 @@
+.map {
+    margin-bottom: 120px;
+}
+
+@media screen and (max-width:800px) {
+    .map {
+        margin-bottom: 60px;
+    }
+}

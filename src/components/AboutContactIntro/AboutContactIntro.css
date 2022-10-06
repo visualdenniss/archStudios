@@ -1,0 +1,116 @@
+.aboutcontact-header {
+    display: flex;
+    width: 100%;
+    position: relative;
+    height: 600px;
+    /* border: 1px solid red; */
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-family: 'Karla';
+    margin-bottom: 120px;
+}
+
+.intro-img-wrapper {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.intro-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.intro-content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    /* border: 1px solid green; */
+    padding: 120px 0px 0px 80px;
+    box-sizing: content-box;
+    background-color: white;
+    position: relative;
+}
+
+.intro-content > h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-weight: 800;
+    margin-top: 40px;
+}
+
+.separator-line::before {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 2px;
+    background: var(--light-primary);
+}
+
+.intro-content > span {
+    position: absolute;
+    top: -70px;
+    left: -20px;
+    font-size: 140px;
+    font-weight: 800;
+    letter-spacing: -2px;
+    color: var(--light-primary);
+}
+
+.intro-content > .contact-span {
+    left: -120px;
+}
+
+@media screen and (max-width:800px) {
+
+    .aboutcontact-header {
+        height: 500px;
+    }
+    .intro-img-wrapper {
+        width: 10%;
+    }  
+
+    .intro-content {
+        width: 80%;
+        padding: 80px 0px 0px 0px;
+    } 
+
+    .intro-content > span {
+        font-size: 15vw;
+    }
+
+    .intro-content > .contact-span {
+        left: -20px;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .aboutcontact-header {
+        height: 400px;
+        margin-bottom: 80px;
+    }
+    .intro-img-wrapper {
+        display: none;
+    }  
+    .intro-content > .contact-span {
+        left: 0px;
+    }
+
+    .intro-content > span {
+        left: 0px;
+    }
+
+    .intro-content {
+        width: 100%;
+        padding: 40px 0px 0px 0px;
+    } 
+
+    .intro-content > h2 {
+        font-size: 42px;
+    }
+}

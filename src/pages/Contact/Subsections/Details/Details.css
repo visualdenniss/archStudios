@@ -1,0 +1,110 @@
+.contact-details {
+    font-family: 'Karla';
+    display: flex;
+    position: relative;
+    /* border: 1px solid red; */
+    align-items: flex-start;
+    margin-bottom: 120px;
+}
+
+
+.contact-details > h2 {
+    width: 33%;
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-weight: 800;
+    margin-top: 40px;
+
+}
+
+.address-cards {
+    display: flex;
+    flex: 1;
+    /* border: 1px solid green; */
+    align-items: center;
+    margin-top: 50px;
+    gap: 40px;
+}
+
+.address-item {
+    flex: 1;
+}
+
+.address-item > .address-title {
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.address-content {
+    margin-bottom: 40px;
+}
+
+.address-content > p {
+    margin-bottom: 3px;
+}
+
+.address-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 100%;
+    width: 150px;
+}
+
+.address-link > a {
+    color: black;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.arrow {
+    margin-left: 15px;
+    font-size: 20px;
+    margin-bottom: -5px;
+}
+
+
+@media screen and (max-width:900px) {
+    .contact-details {
+        flex-direction: column;
+    }
+
+    .address-cards {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .address-card {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .address-content {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .contact-details {
+        margin-bottom: 80px;
+    }
+    .address-card {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .address-item {
+        margin-bottom: 30px;
+    }
+
+}

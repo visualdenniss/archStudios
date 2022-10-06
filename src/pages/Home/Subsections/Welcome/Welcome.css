@@ -1,0 +1,129 @@
+.welcome-section {
+    height: calc(100vh - 133px);
+    max-height: 600px;
+    /* height: 100%; */
+    /* border: 1px solid red; */
+    position: relative;
+    font-family: 'Karla';
+    margin-bottom: 120px;
+}
+
+.section-title-big {
+    position: absolute;
+    top: -100px;
+    color: var(--light-primary);
+}
+
+.section-title-big span {
+    font-size: 175px;
+    font-weight: 800;
+}
+
+.welcome-section-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.section-text-content {
+    width: 65%;
+    padding: 53px 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-title {
+    font-size: 64px;
+    /* border: 1px solid red; */
+    max-width: 400px;
+    margin-bottom: 60px;
+    line-height: 0.85;
+    color: var(--darkest);
+}
+
+.welcome-desc {
+    margin-bottom: 30px;
+    color: var(--midtones);
+    font-weight: 800;
+    font-size: 16px;
+}
+
+.welcome-img-container {
+    /* border: 1px solid red; */
+    min-width: 300px;
+    flex: 1;
+    /* min-width: 300px; */
+    height: 100%;
+}
+
+.welcome-img-container img {
+    width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+@media screen and (max-width: 1100px) {
+    .section-text-content {
+        padding: 53px 2%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .welcome-img-container {
+        display: none;
+    }
+
+    .section-title-big span {
+        font-size: 100px;
+        font-weight: 800;
+    }
+
+    .section-text-content {
+        width: 100%;
+        padding: 0px 0px;    
+    }
+
+    .section-title {
+        font-size: 64px;
+        /* border: 1px solid red; */
+        max-width: 400px;
+        margin-bottom: 40px;
+    }
+
+    .welcome-section {
+        height: 100%;
+        max-height: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .welcome-section {
+        padding: 0px 20px;
+        margin-bottom: 60px;
+    }
+
+    .section-title-big{
+        content:"";
+        width: 70px;
+        height:1px;
+        background-color: var(--light-primary);
+        top: -15%;
+    } 
+
+    .section-title-big span {
+        display: none;
+    }
+
+    .section-title {
+        font-size: 50px;
+        /* border: 1px solid red; */
+        max-width: 300px;
+        margin-bottom: 30px;
+    }
+
+    .welcome-desc {
+        margin-bottom: 20px;
+    }
+
+}

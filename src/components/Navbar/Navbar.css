@@ -1,0 +1,132 @@
+.navbar {
+    display: flex;
+    padding: 40px 0px;
+    /* border: 1px solid pink; */
+    font-family: 'Karla';
+    position: sticky;
+    top: 0;
+    z-index: 5000;
+    background-color: white;
+}
+
+.logo {
+    font-weight: 800;
+    letter-spacing: -5px;
+    font-size: 45px;
+    text-decoration: none;
+    color: var(--darkest);
+}
+
+.nav-container {
+    margin-left: 10px;
+    flex:1;
+    /* border: 1px solid red; */
+    display: flex;
+}
+
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    font-weight: 800;
+    align-items: center;
+    /* border: 1px solid green; */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--midtones);
+    /* border: 1px solid blue; */
+    margin-left: 50px;
+    letter-spacing: -1px;
+    font-size: 16px;
+    transition: all 0.5s ease-in-out;
+}
+
+.nav-link:hover {
+    color: var(--dark-primary) ;
+}
+
+.toggle-icon-container {
+    display: none;
+}
+
+.toggle-wrapper {
+    display: none;
+}
+
+/* Mobile  */
+
+@media screen  and (max-width: 600px){
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        position: fixed;
+        top: 0;
+    }
+
+    .logo {
+        padding-left: 40px;
+    }
+
+    .toggle-icon-container {
+        padding-right: 40px;
+    }
+
+    
+    .toggle-icon-container {
+        display: block;
+    }
+    
+    .toggle-icon {
+        font-size: 30px;
+    }
+
+    .navbar .nav-container {
+        display: none;
+    }
+
+    .toggle-wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin-top: 133px;
+        transition: all 0.4s ease-in-out;
+        transform: translateX(100%);
+        opacity: 0;
+        display: block;
+    }
+
+    .toggle-nav-list {
+        height: calc(100vh - 133px);
+        width: 100vw;
+        z-index: 1000;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style-type: none;
+        justify-content: space-around;
+    }
+    
+    .toggle-active {
+        transform: none;
+        opacity: 1;
+    }
+
+    .toggle-nav-link {
+        text-decoration: none;
+        font-weight: 800;
+        color: var(--midtones);
+        /* border: 1px solid blue; */
+        letter-spacing: -1px;
+        font-size: 24px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .toggle-nav-link:hover {
+        color: var(--dark-primary) ;
+    }
+}

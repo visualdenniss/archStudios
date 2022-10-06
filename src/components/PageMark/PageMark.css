@@ -1,0 +1,33 @@
+.page-mark {
+    position: absolute;
+    top: 0;
+    left: 40px;
+    z-index: 5000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Karla';
+    color: var(--mid-primary);
+}
+
+.line {
+    content: "";
+    width: 1px;
+    height: 90px;
+    background-color: var(--mid-primary);
+    text-orientation: initial;
+}
+
+.page-name {
+    padding-top: calc(133px - 90px);
+    writing-mode: vertical-rl;
+    display: flex;
+    align-items: center;
+    letter-spacing: 8px;
+}
+
+@media screen and (max-width:600px) {
+    .page-mark {
+        display: none;
+    }
+}
